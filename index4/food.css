@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'redressed',cursive;
+}
+#logo img{ 
+    height: 66px;
+    width: 68px;
+    border-radius: 400px;
+    margin: 4px 5px;
+}
+#navbar{
+    display:flex;
+    position:relative;
+    align-items: center;
+}
+#logo{
+    margin:3px 18px;
+}
+#navbar ul{
+    display:flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    padding:10px 20px;
+}
+#navbar ul li a{
+    color:white;
+    padding:3px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+#navbar ul li a:active{
+    color:rgb(26, 143, 238);
+    }
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:85px;
+    width:100%;
+    z-index: -1;
+    opacity:0.4;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height:645px;
+}
+#home::before{
+    content:"";
+    position:absolute;
+    top:0px;
+    left:0px;
+    background:url('food1.jpg') no-repeat center center/cover;
+    height: 97%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding:12px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding:12px;
+}
+#services{
+    margin:34px;
+    display:flex;
+}
+.box{
+    background-color: #f2f2f2;
+    border:2px solid brown;
+    border-radius: 38px;
+    padding:34px;
+    margin:3px 6px;
+}
+.box img{
+    height:150px;
+    margin:auto;
+    display:block;
+}
+#home h1{
+    color:white;
+    text-align: center;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#client-section{
+    position:relative;
+    height:344px;
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+    background-image: url('cb.jpg');
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.5;
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-items{
+    padding:34px;
+}
+#contact-box{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:34px;
+}
+#contact-box::before{
+    content:"";
+    position:absolute;
+    background-image: url('cont.jpg');
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.6;
+}
+#contact-box form{
+    width:30%;
+}
+#contact-box p{
+    font-size: 1.3rem;;
+}
+#contact-box label{
+    font-size: 1.3rem;;
+}
+.btn{
+    font-family:'Redressed',cursive;
+    background-color: rgb(0,0,0,0);
+    color:white;
+    border-radius:27px;
+    font-size:1.5rem;
+    cursor:pointer;
+    margin:15px 5px;
+    padding:3px 5px;
+}
+.btn:hover{
+    color:rgb(37, 22, 3);
+    background-color: white;
+}
+.btn:active{
+    color:cadetblue;
+}
+.center{
+    text-align: center;
+}
+.form-element input[type=text]
+{
+background-color: rgb(0,0,0,0);
+color:white;
+border-radius:14px;
+}
+.form-element input[type=number]
+{
+background-color: rgb(0,0,0,0);
+color:white;
+border-radius:14px;
+}
+.form-element input[type=email]
+{
+background-color: rgb(0,0,0,0);
+color:white;
+border-radius:14px;
+}
+.form-element textarea[type=textarea]
+{
+background-color: rgb(0,0,0,0);
+color:white;
+border-radius:14px;
+}
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+.center a:hover{
+    color:rgb(37, 22, 3);
+    background-color: white;
+}
