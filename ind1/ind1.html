@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ind1.css"/>
+    <link rel='stylesheet' media='only screen and (max-width: 670px)' href='phoneind1.css' />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Javascript on Steroids</title>
+  </head>
+  <body>
+    <div class="container-1">
+      <h5 id="time">Tick-tick time is going:</h5>
+      <h2>Challenge 1: Your Age in Days</h2>
+      <div class="flex-box-container-1">
+          <div>
+              <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+          </div>
+          <div>
+              <button class="btn btn-danger" onclick="reset()">Reset</button>
+          </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"><b>Answer:</b></div>
+        </div>
+    </div>
+    <div class="container-2">
+        <h2>Challenge 2:Cat Generator</h2>
+        <div class="flex-box-container-2">
+           <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+        </div>
+        <div class="flex-box-container-2" id="flex-cat-gen">
+        </div>
+    </div>
+    <div class="container-3">
+      <h2>Challenge 3: Rock,Paper and Scissor ->Click any one to play
+      </h2>
+      <div class="flex-box-rps" id="flex-box-rps-div">
+        <img src="rock.jpg" alt="this is rock" id="rock" height=150 width=150 onclick="rpsGame(this)">
+        <img src="paper.png" alt="this is paper" id="paper" height=150 width=150 onclick="rpsGame(this)">
+        <img src="scissor.jpg" alt="this is scissor" id="scissor" height=150 width=150 onclick="rpsGame(this)">
+      </div>
+    </div>
+    <script src="ind1.js"></script>
+  </body>
+</html>
