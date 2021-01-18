@@ -191,27 +191,35 @@ body{
 }
 .form-element input[type=text]
 {
+    margin:8px;
+    padding: 5px;
 background-color: rgb(0,0,0,0);
-color:white;
-border-radius:14px;
+columns: #000000;;
+border-radius:8px;
 }
 .form-element input[type=number]
 {
+    margin:8px;
+    padding: 5px;
 background-color: rgb(0,0,0,0);
-color:white;
-border-radius:14px;
+color:rgb(0, 0, 0);
+border-radius:8px;
 }
 .form-element input[type=email]
 {
+    margin:8px;
+    padding: 5px;
 background-color: rgb(0,0,0,0);
-color:white;
-border-radius:14px;
+color:rgb(0, 0, 0);
+border-radius:8px;
 }
 .form-element textarea[type=textarea]
 {
+    margin:8px;
+    padding: 5px;
 background-color: rgb(0,0,0,0);
-color:white;
-border-radius:14px;
+color:rgb(0, 0, 0);
+border-radius:8px;
 }
 footer {
     background-color: #333;
