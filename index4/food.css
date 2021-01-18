@@ -82,6 +82,13 @@ body{
     margin:34px;
     display:flex;
 }
+#services-container h1,#contact h1{
+    color:transparent;
+    background-image: url('cb.jpg');
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 .box{
     background-color: #f2f2f2;
     border:2px solid brown;
