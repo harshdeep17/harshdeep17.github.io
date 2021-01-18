@@ -88,14 +88,22 @@ body{
     border-radius: 38px;
     padding:34px;
     margin:3px 6px;
+    transition: all 1s;
 }
 .box img{
     height:150px;
     margin:auto;
     display:block;
 }
+.box:hover{
+    font-size: 2rem;
+    background-color: #aaa;
+    width: 100vw;
+}
 #home h1{
-    color:white;
+    background:white;
+    mix-blend-mode: screen;
+    color:black;
     text-align: center;
 }
 #home p{
@@ -106,6 +114,11 @@ body{
 #client-section{
     position:relative;
     height:344px;
+}
+#client-section h1{
+    background:rgb(0 0 0);
+    mix-blend-mode: screen;
+    color:white;
 }
 #client-section::before{
     content:"";
