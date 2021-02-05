@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bootstrap</title>
+    <style>
+      html,body{
+        height:100%;
+      }
+      .container-fluid {
+        font-family: "Redressed", cursive;
+        font-size: 22px;
+        height: 100vh;
+      }
+      #headtag {
+        text-align: center;
+        padding: 19px;
+        color: white;
+        background-color: rgb(17, 124, 143);
+        border-radius: 15px;
+        margin: 0px 0px 15px;
+      }
+      .navbar {
+        background-color: #333 !important;
+      }
+      .navbar-toggler {
+        background-color: #fff;
+      }
+      #mynav {
+        background-color: #333 !important;
+        border-radius: 13px;
+        margin: 1px;
+        padding: 5px;
+      }
+      #mynav li a {
+        color: white;
+        border-radius: 20px;
+      }
+      #mynav li a:hover {
+        background-color: white;
+        color: black;
+      }
+      #subli a:hover {
+        background-color: rgb(6, 119, 172) !important;
+        color: rgb(231, 224, 154) !important;
+      }
+      #mycontent {
+        background-image: url("book/book.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #myfooter{
+        background-color:rgb(217 233 241)!important;
+      }
+      footer {
+    background-color: #333;
+    overflow: hidden;
+}
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" id="headtag">
+        <div class="col"><h1>Technical HD BABA</h1></div>
+      </div>
+      <div class="row" id="mynav">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#mynavbar"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item p-2">
+                  <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown p-2">
+                  <a
+                    href=""
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    >Our courses</a
+                  >
+                  <div class="dropdown-menu" id="subli">
+                    <a href="" class="dropdown-item text-light bg-dark mb-1"
+                      >IIT-JEE</a
+                    >
+                    <a href="" class="dropdown-item text-light bg-dark mt-1"
+                      >NEET</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item p-2">
+                  <a href="" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a href="" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown p-2">
+                  <a
+                    href=""
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    >Login/Sign Up</a
+                  >
+                  <div class="dropdown-menu" id="subli">
+                    <a href="" class="dropdown-item text-light bg-dark mb-1"
+                      >Login</a
+                    >
+                    <a href="" class="dropdown-item text-light bg-dark mt-1"
+                      >Sign Up</a
+                    >
+                  </div>
+                </li>
+              </ul>
+              <form class="form-inline" style="display: flex">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-info m-2" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row p-5 text-center bg-image" id="mycontent">
+       <div class="col mask" style="background-color: rgba(0, 0, 0, 0.7)">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">Live classroom Program</h1>
+            <h5 class="mb-4">Crack IIT-JEE/NEET with India's Best online Coaching</h5>
+            <a
+              class="btn btn-outline-light btn-lg m-2"
+              href=""
+              role="button"
+              rel="nofollow"
+              target="_blank"
+              >Enroll Now</a
+            >
+            <a
+              class="btn btn-outline-light btn-lg m-2"
+              href=""
+              target="_blank"
+              role="button"
+              >Online Test Series</a
+            >
+          </div>
+        </div>
+       </div>
+      </div>
+       <!-- Footer -->
+<footer class="bg-light text-center text-lg-start" id="myfooter">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-12 col-md-12 mb-4 mb-0 m-auto p-auto">
+        <h5 class="text-uppercase">Our Founder</h5>
+        <img src="book/anjali.jpg" width="25%" height="80%" alt="This is Anjali Sharma">
+        <h3>Anjali Sharma</h3>
+      </div>
+      <div class="col-lg-12 col-md-12 mb-4 mb-0 justify-content-center">
+        <h4>Young Electrical Engineering Student and #1 Electrical 2k19 Batch | Founder of this course and helps young hustlers. </h4>
+        <h1>Full course coming soon</h1>
+      </div>
+      <!--Grid column-->
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+  <footer>
+    <a href="#">FAQ</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Terms of Use</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Refund Policy</a>
+    <a href="#">&copy; 2021|HD's Zone</a>
+</footer>
+</footer>
+<!-- Footer -->
+     
+      </div>
+    </div>
+  </body>
+
+</html>
