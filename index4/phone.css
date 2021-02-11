@@ -10,7 +10,7 @@
 }
 /* Home section */
 #home{
-    height: 328px; 
+    height: 370px; 
     padding: 3px 28px;
 }
 
@@ -57,4 +57,11 @@
 .btn{
     font-size: 13px;
     padding: 4px 8px;
+}
+#mycontent h1{
+    margin: 150px 0px 0px 0px;
+}
+footer{
+    display:flex;
+    flex-wrap: wrap;
 }

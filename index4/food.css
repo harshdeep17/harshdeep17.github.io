@@ -11,65 +11,40 @@ body{
     border-radius: 400px;
     margin: 4px 5px;
 }
-#navbar{
-    display:flex;
-    position:relative;
-    align-items: center;
-}
+
 #logo{
     margin:3px 18px;
 }
-#navbar ul{
-    display:flex;
-}
-#navbar ul li{
-    list-style: none;
-    font-size: 1.3rem;
-    padding:10px 20px;
-}
-#navbar ul li a{
-    color:white;
-    padding:3px 10px;
+
+#mynav {
+    background-color: rgba(0, 0, 0, 0.459)!important;
+    border-radius: 13px;
+    margin: 1px;
+    padding: 5px;
+  }
+  #mynav li a {
+    color: white;
     border-radius: 20px;
-    text-decoration: none;
-}
-#navbar ul li a:hover{
-    color:black;
+    font-size:1.5rem;
+  }
+  #mynav li a:hover {
     background-color: white;
-}
-#navbar ul li a:active{
-    color:rgb(26, 143, 238);
-    }
-#navbar::before{
-    content:"";
-    background-color: black;
-    position:absolute;
-    top:0px;
-    left:0px;
-    height:85px;
-    width:100%;
-    z-index: -1;
-    opacity:0.4;
-}
-#home{
-    display: flex;
-    flex-direction: column;
-    padding: 3px 200px;
-    justify-content: center;
-    align-items: center;
-    height:645px;
-}
-#home::before{
-    content:"";
-    position:absolute;
-    top:0px;
-    left:0px;
-    background:url('food1.jpg') no-repeat center center/cover;
-    height: 97%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.89;
-}
+    color: black;
+  }
+  #subli a:hover {
+    background-color: rgb(253, 23, 7) !important;
+    color: rgb(231, 224, 154) !important;
+  }
+  .navbar {
+    background-color: rgb(0,0,0,0) !important;
+  }
+  #mycontent {
+    background:url('food1.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 .h-primary{
     font-size: 2.8rem;
     padding:12px;
@@ -107,13 +82,14 @@ body{
     background-color: #aaa;
     width: 100vw;
 }
-#home h1{
-    background:white;
+#mycontent h1{
+    background:rgb(255, 255, 255);
     mix-blend-mode: screen;
-    color:black;
+    color:rgb(22, 5, 5);
     text-align: center;
+    margin: 170px 200px 0px 200px;
 }
-#home p{
+#mycontent p{
     color:white;
     text-align: center;
     font-size: 1.5rem;
@@ -123,9 +99,11 @@ body{
     height:344px;
 }
 #client-section h1{
-    background:rgb(0 0 0);
-    mix-blend-mode: screen;
-    color:white;
+    color:transparent;
+    background-image: url('cb.jpg');
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 #client-section::before{
     content:"";
@@ -134,7 +112,7 @@ body{
     width:100%;
     height:100%;
     z-index:-1;
-    opacity:0.5;
+    opacity:0.6;
 }
 #clients{
     display:flex;
@@ -149,12 +127,13 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    padding:34px;
+    padding: 5px;
 }
 #contact-box::before{
     content:"";
     position:absolute;
     background-image: url('cont.jpg');
+    background-size: cover;
     width:100%;
     height:100%;
     z-index:-1;
@@ -178,6 +157,7 @@ body{
     cursor:pointer;
     margin:15px 5px;
     padding:3px 5px;
+    outline: none;
 }
 .btn:hover{
     color:rgb(37, 22, 3);
@@ -191,33 +171,37 @@ body{
 }
 .form-element input[type=text]
 {
-    margin:8px;
+    outline: none;
+    margin:0px;
     padding: 5px;
-background-color: rgb(0,0,0,0);
+
 columns: #000000;;
 border-radius:8px;
 }
 .form-element input[type=number]
 {
-    margin:8px;
+    outline: none;
+   
     padding: 5px;
-background-color: rgb(0,0,0,0);
+
 color:rgb(0, 0, 0);
 border-radius:8px;
 }
 .form-element input[type=email]
 {
-    margin:8px;
+    outline: none;
+
     padding: 5px;
-background-color: rgb(0,0,0,0);
+
 color:rgb(0, 0, 0);
 border-radius:8px;
 }
 .form-element textarea[type=textarea]
 {
-    margin:8px;
+    outline: none;
+  
     padding: 5px;
-background-color: rgb(0,0,0,0);
+
 color:rgb(0, 0, 0);
 border-radius:8px;
 }
@@ -236,3 +220,13 @@ footer a {
     color:rgb(37, 22, 3);
     background-color: white;
 }
+.content {
+    transition: opacity 1s;
+    display: none;   
+  
+   }
+   .content.visible {
+    display: block;  
+    transition: opacity 1s; 
+    
+   }
