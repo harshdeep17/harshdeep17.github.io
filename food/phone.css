@@ -9,10 +9,7 @@
     padding-bottom: 8px;
 }
 /* Home section */
-#home{
-    height: 370px; 
-    padding: 3px 28px;
-}
+
 
 #home::before{
     height: 480px; 
