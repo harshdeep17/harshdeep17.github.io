@@ -9,14 +9,14 @@ body{
     font-family: 'redressed',cursive;
 }
 #logo img{ 
-    height: 66px;
-    width: 68px;
-    border-radius: 400px;
-    margin: 4px 5px;
+    height: 97px;
+    width: 110px;
+    border-radius: 5px;
+    margin: 4px 19px;
 }
 
 #logo{
-    margin:3px 18px;
+    margin:-13px -18px;
 }
 
 #mynav {
