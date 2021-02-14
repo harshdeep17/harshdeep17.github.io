@@ -9,16 +9,18 @@ body{
     font-family: 'redressed',cursive;
 }
 #logo img{ 
-    height: 97px;
-    width: 110px;
+    height: 78px;
+    width: 100px;
     border-radius: 5px;
-    margin: 4px 19px;
+    margin: 4px 0px;
 }
 
 #logo{
     margin:-13px -18px;
 }
-
+#mynavbar{
+    margin:0px 50px;
+}
 #mynav {
     background-color: rgba(0, 0, 0, 0.459)!important;
     border-radius: 13px;
