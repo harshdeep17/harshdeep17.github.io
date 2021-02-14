@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'redressed',cursive;
+}
+#logo img{ 
+    height: 78px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 4px 0px;
+}
+
+#logo{
+    margin:-13px -18px;
+}
+#mynavbar{
+    margin:0px 15px;
+}
+#mynav {
+    background-color: rgba(0, 0, 0, 0.459)!important;
+    border-radius: 13px;
+    margin: 1px;
+    padding: 5px;
+  }
+  #mynav li a {
+    color: white;
+    border-radius: 20px;
+    font-size:1.5rem;
+  }
+  #mynav li a:hover {
+    background-color: white;
+    color: black;
+  }
+  #subli a:hover {
+    background-color: rgb(253, 23, 7) !important;
+    color: rgb(231, 224, 154) !important;
+  }
+  .navbar {
+    background-color: rgb(0,0,0,0) !important;
+  }
+  #mycontent {
+    background:url('food1.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.h-primary{
+    font-size: 2.8rem;
+    padding:12px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding:12px;
+}
+#services{
+    margin:34px;
+    display:flex;
+}
+#services-container h1,#contact h1{
+    color:transparent;
+    background-image: url('cb.jpg');
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.box{
+    background-color: #f2f2f2;
+    border:2px solid brown;
+    border-radius: 38px;
+    padding:34px;
+    margin:3px 6px;
+    transition: all 1s;
+}
+.box img{
+    height:150px;
+    margin:auto;
+    display:block;
+}
+.box:hover{
+    font-size: 2rem;
+    background-color: #aaa;
+    width: 100vw;
+}
+#mycontent h1{
+    background:rgb(255, 255, 255);
+    mix-blend-mode: screen;
+    color:rgb(22, 5, 5);
+    text-align: center;
+    margin: 170px 200px 0px 200px;
+}
+#mycontent p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#client-section{
+    position:relative;
+    height:344px;
+}
+#client-section h1{
+    color:transparent;
+    background-image: url('cb.jpg');
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+    background-image: url('cb.jpg');
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.6;
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-items{
+    padding:34px;
+}
+#contact-box{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    padding :60px;
+}
+#contact-box::before{
+    content:"";
+    position:absolute;
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);    
+    background-size: cover;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    
+}
+#contact-box form{
+    width:20%;
+}
+#contact-box p{
+    font-size: 1.3rem;;
+}
+#contact-box label{
+    font-size: 1.3rem;;
+}
+.btn{
+    font-family:'Redressed',cursive;
+    background-color: rgb(0,0,0,0);
+    color:white;
+    border-radius:27px;
+    font-size:1.5rem;
+    cursor:pointer;
+    margin:15px 5px;
+    padding:3px 5px;
+    outline: none;
+}
+.btn:hover{
+    color:rgb(37, 22, 3);
+    background-color: white;
+}
+.btn:active{
+    color:cadetblue;
+}
+.center{
+    text-align: center;
+}
+.form-element input[type=text]
+{
+    outline: none;
+
+
+columns: #000000;;
+border-radius:8px;
+}
+.form-element input[type=number]
+{
+    outline: none;
+   
+
+
+color:rgb(0, 0, 0);
+border-radius:8px;
+}
+.form-element input[type=email]
+{
+    outline: none;
+
+   
+
+color:rgb(0, 0, 0);
+border-radius:8px;
+}
+.form-element textarea[type=textarea]
+{
+    outline: none;
+  
+   
+
+color:rgb(0, 0, 0);
+border-radius:8px;
+}
+footer {
+    background-color: #36096d;
+    background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+    overflow: hidden;
+}
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+.center a:hover{
+    color:rgb(37, 22, 3);
+    background-color: white;
+}
+.content {
+    transition: opacity 1s;
+    display: none;   
+  
+   }
+   .content.visible {
+    display: block;  
+    transition: opacity 1s; 
+    
+   }
